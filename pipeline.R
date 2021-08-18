@@ -5,7 +5,7 @@ library(tidyverse)
 df <- read.csv("andre.csv", header = TRUE)
 
 # Part 2: remove data from 1976 and after 1993
-df <- filter(df, Year != 1976)
+df <- filter(df, Year > 1976)
 df <- filter(df, Year < 1994)
 
 # Part 3: make a histogram
