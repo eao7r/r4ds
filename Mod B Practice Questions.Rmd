@@ -1,0 +1,78 @@
+---
+title: "Stat 6021 Module B Practice Answers"
+author: "Andy Ortiz"
+date: "8/23/2021"
+output: html_document
+---
+
+**1)**
+
+
+```{r}
+cars.df<-mtcars
+head(cars)
+```
+
+**2)**
+```{r}
+students.df<-read.table("students.txt")
+head(students.df)
+```
+**3)**
+install.packages() performed on all assigned packages
+
+**4)**
+```{r echo=FALSE}
+library("faraway")
+```
+```{r}
+corn.df<-cornnit
+head(corn.df)
+```
+**5)**
+  a)valid \
+  b)not valid \
+  c)not valid \
+  d)not valid \
+  e)valid \
+  f)not valid \
+  g)not valid \
+  h)valid
+  
+**6)**
+```{r}
+practice<-c(13,91,36,95,9,3,61,20,22,97)
+class(practice)
+```
+**7)**
+a) False \
+b) False \
+c) False \
+d) True \
+e) True \
+f) False
+
+**8)**
+```{r}
+Mat.A<-matrix(data=c(4,1,3,6,2,1), nrow=2, ncol=3, byrow = TRUE)
+head(Mat.A)
+```
+**a)**
+```{r}
+colnames(Mat.A)<-list("Huey","Dewey","Luey")
+head(Mat.A)
+```
+
+**b)**
+6
+**c)**
+2 3
+
+**9)**
+```{r}
+factor(practice)
+```
+This factor is in numerical order. \
+**10)**
+This is in R Markdown output as HTML.
+

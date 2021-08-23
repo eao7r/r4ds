@@ -4,7 +4,7 @@ library(tidyverse)
 # Part 1: Read data into data frame
 df <- read.csv("owid-covid-data.csv", header = TRUE)
 
-# Part 2: remove data from 1976 and after 1993
+# Part 2: select only data from US
 df <- filter(df, location == "United States" & people_fully_vaccinated_per_hundred & hosp_patients_per_million )
 
 
